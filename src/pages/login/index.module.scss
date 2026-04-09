@@ -1,0 +1,38 @@
+
+/* 外层全屏 */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #f0f2f5;
+}
+.container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 480px;
+    background: #181818;
+    border-radius: 16px;
+    box-shadow: var(--elevation-high-shadow);
+    transition: all .2s;
+:global {
+    /* label */
+    .ant-form-item-label > label {
+      color: #f0f2f5;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .ant-checkbox-label{
+      color: #f0f2f5;
+    }
+    .ant-form-item-control-input-content{
+      color: #f0f2f5;
+    }
+  }
+    
+    // background: pink;
+}

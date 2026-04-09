@@ -1,0 +1,65 @@
+/* ===== Header Tab Bar 样式覆盖 ===== */
+
+/* 隐藏 tabs 自带的下划线/边框 */
+.ant-tabs-top > .ant-tabs-nav::before {
+  border-bottom: none !important;
+}
+
+/* 让整个 tabs nav 垂直居中 */
+.ant-tabs-nav {
+  margin: 0 !important;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+/* 标签之间间隔 10px */
+.ant-tabs-nav-list {
+  gap: 10px;
+  padding: 0 16px;
+}
+
+/* 每个标签默认样式：圆角、红色背景、白字 */
+.ant-tabs-tab {
+  background-color: #ff2442 !important;
+  border: none !important;
+  border-radius: 6px !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  padding: 4px 14px !important;
+  margin: 0 !important;
+  transition: background-color 0.2s, color 0.2s, opacity 0.2s;
+  opacity: 0.75;
+}
+
+/* 标签内的文字 */
+.ant-tabs-tab .ant-tabs-tab-btn {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 13px;
+}
+
+/* 激活（选中）的标签：更深红 + 不透明 + 阴影 */
+.ant-tabs-tab.ant-tabs-tab-active {
+  background-color: #cc1533 !important;
+  opacity: 1 !important;
+  box-shadow: 0 2px 8px rgba(204, 21, 51, 0.45) !important;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+/* 关闭图标变白 */
+.ant-tabs-tab .ant-tabs-tab-remove {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 11px;
+}
+
+.ant-tabs-tab .ant-tabs-tab-remove:hover {
+  color: #ffffff !important;
+}
+
+/* 隐藏 tabs 左右滚动的渐变遮罩 */
+.ant-tabs-nav-operations {
+  display: none !important;
+}
